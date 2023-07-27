@@ -1,0 +1,464 @@
+.ContainerReservation {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.containerTable {
+  height: 98%;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid #ce750f;
+}
+
+.lineTable1,
+.lineTable2,
+.lineTable3 {
+  height: 30%;
+  width: 100%;
+  /*background-color: aqua;*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tableNumber {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(255, 0, 0);
+}
+
+.table7Chaises h1,
+.table11Chaises h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(255, 0, 0);
+  transform: rotate(220deg);
+}
+
+.table1 {
+  width: 9%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table1:hover,
+.table2:hover,
+.table3:hover,
+.table4:hover,
+.table5:hover,
+.table6:hover,
+.table7:hover,
+.table8:hover,
+.table9:hover,
+.table10:hover,
+.table11:hover,
+.table12:hover,
+.table14:hover,
+.table15:hover,
+.table16:hover,
+.table17:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.table1-10-12Chaises {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #d1c5c5;
+  z-index: 1;
+}
+
+.table1-10-12chaise1 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+}
+.table1-10-12chaise2 {
+  background-color: #108f45;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+}
+
+.table1-10-12chaise3 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 10;
+  left: 10;
+  transform: rotate(45deg);
+}
+.table1-10-12chaise4 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 10;
+  left: 10;
+  transform: rotate(-45deg);
+}
+
+.table2 {
+  width: 8%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table2Chaises {
+  width: 90%;
+  height: 85%;
+  background-color: #d1c5c5;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  z-index: 1;
+}
+
+.table2chaise1 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+}
+.table2chaise2 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.table2chaise3 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 20%;
+}
+
+.table3 {
+  width: 15%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table3Chaises {
+  width: 90%;
+  height: 85%;
+  background-color: #d1c5c5;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  z-index: 1;
+}
+
+.table3chaise1 {
+  background-color: #108f45;
+  width: 7%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+.table3chaise2 {
+  background-color: #108f45;
+  width: 7%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
+.table3chaise3 {
+  background-color: #108f45;
+  width: 7%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 35%;
+}
+.table3chaise4 {
+  background-color: #108f45;
+  width: 7%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+.table4 {
+  width: 10%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table5 {
+  width: 10%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table7 {
+  width: 8%;
+  aspect-ratio: 1/1;
+  transform: rotate(130deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table7Chaises {
+  width: 80%;
+  height: 85%;
+  background-color: #d1c5c5;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  z-index: 1;
+}
+
+.table7Chaise1 {
+  background-color: #108f45;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+.table7Chaise2 {
+  background-color: #108f45;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.table7Chaise3 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0%;
+  right: 30%;
+}
+.table7Chaise4 {
+  background-color: #108f45;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0%;
+  right: 60%;
+}
+
+.table6,
+.table8,
+.table9 {
+  width: 5%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table6-8-9Chaises {
+  width: 80%;
+  height: 85%;
+  background-color: #d1c5c5;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  z-index: 1;
+}
+
+.table6-8-9Chaise1 {
+  background-color: #108f45;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.table6-8-9Chaise2 {
+  background-color: #108f45;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+.table6-8-9Chaise3 {
+  background-color: #108f45;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+
+.table10 {
+  width: 9%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.leftrange {
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.rightrange {
+  width: 30%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.table11 {
+  width: 13%;
+  aspect-ratio: 1/1;
+
+  transform: rotate(130deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: -30%;
+}
+.table12 {
+  width: 15%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table13 {
+  width: 5%;
+  height: 90%;
+  border-left: 1px solid #ce750f;
+  border-right: 1px solid #ce750f;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -9%;
+  right: 10%;
+}
+
+.containerEntree {
+  width: 140%;
+  aspect-ratio: 1/1;
+  border-right: 1px solid #ce750f;
+  border-left: 1px solid #ce750f;
+  border-radius: 10%;
+  position: absolute;
+  top: -30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entree {
+  width: 80%;
+  border-radius: 10%;
+  aspect-ratio: 1/1;
+  background-color: #ff0000;
+}
+
+.table13 h5 {
+  position: absolute;
+  transform: rotate(90deg);
+  letter-spacing: 3px;
+}
+.tapisdentree {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+}
+.table14,
+.table15,
+.table16,
+.table17 {
+  width: 20%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.table14-15-16-17Chaises {
+  width: 90%;
+  height: 80%;
+  background-color: #d1c5c5;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.table14-15-16-17chaise1 {
+  background-color: #108f45;
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+}
