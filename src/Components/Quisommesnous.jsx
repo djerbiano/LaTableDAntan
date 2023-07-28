@@ -1,9 +1,5 @@
-import React from 'react'
-
 function Quisommesnous() {
-  return (
-    <div>En cours de dev</div>
-  )
+  return <div>En cours de dev</div>;
 }
 
-export default Quisommesnous
+export default Quisommesnous;

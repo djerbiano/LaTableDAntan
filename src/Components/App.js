@@ -6,7 +6,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Commander from "./Commander";
 import Réservation from "./Réservation";
-import QuiSommesNous from "./QuiSommesNous";
+
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/Commander" element={<Commander />} />
           <Route path="/Réservation" element={<Réservation />} />
-          <Route path="/QuiSommesNous" element={<QuiSommesNous />} />
+        
           <Route path="*" element={<Main />} />
         </Routes>
         <Footer />
