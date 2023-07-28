@@ -1,0 +1,92 @@
+.ContainerQuisommesnous {
+    height: 98%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+   
+}
+.ContainerForm {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+.ContainerForm * {
+  color: black;
+}
+
+.ContainerInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContainerInput input {
+  width: 30%;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.ContainerCréneaux {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContainerCréneaux form * {
+  padding: 5px;
+  margin-right: 50px;
+}
+.ContainerCréneaux form button {
+  background-color: #ce750f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*///////////////////////   modal   /////////////////////////////////*/
+
+
+  .closeReservation {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .closeReservation svg:hover {
+    fill: red;
+    scale: 1.4;
+    transition: 0.3s;
+  }
+
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+  

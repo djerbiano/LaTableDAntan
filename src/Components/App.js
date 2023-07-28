@@ -6,7 +6,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Commander from "./Commander";
 import Réservation from "./Réservation";
-import QuiSommesNous from "./Quisommesnous.jsx";
+import QuiSommesNous from "./QuiSommesNous";
 
 function App() {
   return (

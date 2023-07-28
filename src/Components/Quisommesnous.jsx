@@ -2,7 +2,7 @@ import React from 'react'
 
 function Quisommesnous() {
   return (
-    <div>projet en cours de développement</div>
+    <div>En cours de dev</div>
   )
 }
 
