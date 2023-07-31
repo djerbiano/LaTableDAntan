@@ -6,7 +6,7 @@ function ReservationForm({ toggleReservation }) {
     ...new Set(tables.flatMap((table) => table.créneauxDisponible)),
   ];
   return (
-    <div className="ContainerQuisommesnous">
+    <div className="ContainerComponentForm">
       <div className="closeReservation" onClick={toggleReservation}>
         <AiOutlineClose />
       </div>
