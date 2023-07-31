@@ -1,0 +1,208 @@
+import "../Styles/Commander.css";
+import { useState } from "react";
+import products from "../Products.js";
+import { AiOutlineClose } from "react-icons/ai";
+
+function Commander() {
+  const [Product, setProduct] = useState(0);
+  const [ModalActive, setModalActive] = useState(false);
+
+  return (
+    <div className="ContainerCommander">
+      <div className="CommanderCotainerProduct">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="firstProduct"
+            onClick={() => {
+              setProduct(index);
+              setModalActive(true);
+            }}
+          >
+            <div className="photoCommander">
+              <img src={product.photo} alt={product.title} />
+            </div>
+
+            <div className="textCommander">
+              <div>
+                <h3>{product.title}</h3>
+                <p>{product.description}</p>
+              </div>
+
+              <div className="prix">
+                <h3>{product.prix} $</h3>
+                <button>Ajouter</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className={ModalActive ? "modalActive" : "modal"}>
+        <div className="closeModal" onClick={() => setModalActive(false)}>
+          <AiOutlineClose />
+        </div>
+        <div className="ContainerProductByy">
+          <div className="photobyy">
+            <img src={products[Product].photo} alt={products[Product].title} />
+          </div>
+
+          <div className="textbyy">
+            <h1>{products[Product].title}</h1>
+            <h3>{products[Product].description}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Commander;
+
+
+
+
+
+
+.ContainerCommander{
+    height: 70%;
+    width: 100%;
+  }
+  
+  .CommanderCotainerProduct {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .firstProduct {
+    width: 33%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .photoCommander {
+    width: 40%;
+    height: 100%;
+  }
+  
+  .photoCommander img {
+    width: 100%;
+    height: 100%;
+  }
+  .photoCommander img:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  .textCommander {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .textCommander p {
+   width:200px;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+   overflow: hidden;
+  }
+  .prix {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .prix button {
+    width: 100px;
+    height: 30px;
+    background-color: #ce750f;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modalActive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-out;
+  }
+  .closeModal {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .closeModal svg:hover {
+    fill: red;
+    scale: 1.4;
+    transition: 0.3s;
+  }
+  
+  .ContainerProductByy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+  }
+  
+  .photobyy {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photobyy img {
+    width: 60%;
+    height: 60%;
+  }
+  
+  .textbyy {
+    width: 30%;
+    height: 70%;
+    background: linear-gradient(180deg, #ce750f 0%, rgba(0, 0, 0, 0.67) 100%);
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .textbyy * {
+    color: rgb(0, 0, 0);
+    margin-top: 10%;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+  
