@@ -1,10 +1,24 @@
 import "../Styles/ReservationForm.css";
 import tables from "../table";
 import { AiOutlineClose } from "react-icons/ai";
-function ReservationForm({ toggleReservation }) {
+
+function ReservationForm({ toggleReservation, tableId }) {
   const allCréneaux = [
     ...new Set(tables.flatMap((table) => table.créneauxDisponible)),
   ];
+  let table = tables.find((table) => table.id === tableId);
+  let numberOfSeats = table.nombrePersonnes;
+
+  let generateInputForNumberOfSeats = (numberOfSeats) => {
+    const inputs = [];
+    for (let i = 0; i < numberOfSeats; i++) {
+      inputs.push(
+        <input key={i} type="text" placeholder="Entrez votre prénom" />
+      );
+    }
+    return inputs;
+  };
+
   return (
     <div className="ContainerComponentForm">
       <div className="closeReservation" onClick={toggleReservation}>
@@ -12,20 +26,13 @@ function ReservationForm({ toggleReservation }) {
       </div>
 
       <div className="ContainerForm">
-        <h5>Veuillez saisir vos coordonnées :</h5>
+        <h5>Veuillez saisir vos coordonnées:</h5>
         <br />
         <div className="ContainerInput">
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
-          <input type="text" placeholder="Entrez votre prénom" />
+          {generateInputForNumberOfSeats(numberOfSeats)}
         </div>
         <br />
-        <h5>Choisir un crénaux</h5>
+        <h5>Choisir un crénau</h5>
         <br />
         <div className="ContainerCréneaux">
           <form>

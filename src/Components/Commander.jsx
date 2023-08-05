@@ -60,7 +60,7 @@ const TextContainer = styled.div`
 `;
 
 const ProductTitle = styled.h3`
-  /* Add your title styles here */
+  /* empty */
 `;
 
 const ProductDescription = styled.p`
