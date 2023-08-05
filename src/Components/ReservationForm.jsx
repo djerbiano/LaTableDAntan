@@ -6,6 +6,8 @@ function ReservationForm({ toggleReservation, tableId }) {
   const allCréneaux = [
     ...new Set(tables.flatMap((table) => table.créneauxDisponible)),
   ];
+
+  
   let table = tables.find((table) => table.id === tableId);
   let numberOfSeats = table.nombrePersonnes;
 
