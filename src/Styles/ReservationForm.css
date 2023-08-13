@@ -23,6 +23,10 @@
   color: black;
 }
 
+.ContainerForm p {
+  color: red;
+}
+
 .ContainerInput {
   width: 100%;
   display: flex;

@@ -6,6 +6,7 @@ import ReservationValidee from "./ReservationValidee";
 
 function ReservationForm({ toggleReservation, tableId }) {
   const [reservationValidee, setReservationValidee] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
   const allCréneaux = [
     ...new Set(tables.flatMap((table) => table.créneauxDisponible)),
   ];
@@ -38,7 +39,7 @@ function ReservationForm({ toggleReservation, tableId }) {
     });
 
     if (hasEmptyField) {
-      alert("Vous devez remplir tous les champs.");
+      setErrorMessage("Vous devez remplir tous les champs.");
     } else {
       console.log(allInputValues);
       setReservationValidee(false);
@@ -54,6 +55,7 @@ function ReservationForm({ toggleReservation, tableId }) {
       <div className="ContainerForm">
         <h5>Veuillez saisir vos coordonnées:</h5>
         <br />
+        {errorMessage && <p className="errorMessage">{errorMessage}</p>}
         <div className="ContainerInput">
           {generateInputForNumberOfSeats(numberOfSeats)}
         </div>
