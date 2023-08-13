@@ -1,7 +1,9 @@
+
 import picture1 from "../Assets/restauraninfo1.jpg";
 import picture2 from "../Assets/restauraninfo2.jpg";
 
 import styled from "styled-components";
+
 
 const ContainerQuisommesnous = styled.div`
   height: 80%;
@@ -68,5 +70,4 @@ function Quisommesnous() {
     </ContainerQuisommesnous>
   );
 }
-
 export default Quisommesnous;

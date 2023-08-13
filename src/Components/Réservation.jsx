@@ -35,10 +35,7 @@ function Réservation() {
                 <div className="table1-10-12chaise4"></div>
               </div>
 
-              <div
-                className="table2"
-                onClick={toggleReservationMode}
-              >
+              <div className="table2" onClick={toggleReservationMode}>
                 <div className="table2Chaises">
                   <h1 className="tableNumber">{tables[1].id}</h1>
                 </div>
@@ -47,10 +44,7 @@ function Réservation() {
                 <div className="table2chaise3"></div>
               </div>
 
-              <div
-                className="table3"
-                onClick={toggleReservationMode}
-              >
+              <div className="table3" onClick={toggleReservationMode}>
                 <div className="table3Chaises">
                   <h1 className="tableNumber">{tables[2].id}</h1>
                 </div>
@@ -60,10 +54,7 @@ function Réservation() {
                 <div className="table3chaise4"></div>
               </div>
 
-              <div
-                className="table4"
-                onClick={toggleReservationMode}
-              >
+              <div className="table4" onClick={toggleReservationMode}>
                 <div className="table2Chaises">
                   <h1 className="tableNumber">{tables[3].id}</h1>
                 </div>
@@ -72,10 +63,7 @@ function Réservation() {
                 <div className="table2chaise3"></div>
               </div>
 
-              <div
-                className="table5"
-                onClick={toggleReservationMode}
-              >
+              <div className="table5" onClick={toggleReservationMode}>
                 <div className="table2Chaises">
                   <h1 className="tableNumber">{tables[4].id}</h1>
                 </div>
@@ -86,10 +74,7 @@ function Réservation() {
             </div>
 
             <div className="lineTable2">
-              <div
-                className="table6"
-                onClick={toggleReservationMode}
-              >
+              <div className="table6" onClick={toggleReservationMode}>
                 <div className="table6-8-9Chaises">
                   <h1 className="tableNumber">{tables[5].id}</h1>
                 </div>
@@ -98,10 +83,7 @@ function Réservation() {
                 <div className="table6-8-9Chaise3"></div>
               </div>
 
-              <div
-                className="table7"
-                onClick={toggleReservationMode}
-              >
+              <div className="table7" onClick={toggleReservationMode}>
                 <div className="table7Chaises">
                   <h1 className="tableNumber">{tables[6].id}</h1>
                 </div>
@@ -111,10 +93,7 @@ function Réservation() {
                 <div className="table7Chaise4"></div>
               </div>
 
-              <div
-                className="table8"
-                onClick={toggleReservationMode}
-              >
+              <div className="table8" onClick={toggleReservationMode}>
                 <div className="table6-8-9Chaises">
                   <h1 className="tableNumber">{tables[7].id}</h1>
                 </div>
@@ -122,10 +101,7 @@ function Réservation() {
                 <div className="table6-8-9Chaise2"></div>
                 <div className="table6-8-9Chaise3"></div>
               </div>
-              <div
-                className="table9"
-                onClick={toggleReservationMode}
-              >
+              <div className="table9" onClick={toggleReservationMode}>
                 <div className="table6-8-9Chaises">
                   <h1 className="tableNumber">{tables[8].id}</h1>
                 </div>
@@ -133,10 +109,7 @@ function Réservation() {
                 <div className="table6-8-9Chaise2"></div>
                 <div className="table6-8-9Chaise3"></div>
               </div>
-              <div
-                className="table10"
-                onClick={toggleReservationMode}
-              >
+              <div className="table10" onClick={toggleReservationMode}>
                 <div className="table1-10-12Chaises">
                   <h1 className="tableNumber">{tables[9].id}</h1>
                 </div>
@@ -148,10 +121,7 @@ function Réservation() {
             </div>
             <div className="lineTable3">
               <div className="leftrange">
-                <div
-                  className="table11"
-                  onClick={toggleReservationMode}
-                >
+                <div className="table11" onClick={toggleReservationMode}>
                   <div className="table7Chaises">
                     <h1 className="tableNumber">{tables[10].id}</h1>
                   </div>
@@ -161,10 +131,7 @@ function Réservation() {
                   <div className="table7Chaise4"></div>
                 </div>
 
-                <div
-                  className="table12"
-                  onClick={toggleReservationMode}
-                >
+                <div className="table12" onClick={toggleReservationMode}>
                   <div className="table1-10-12Chaises">
                     <h1 className="tableNumber">{tables[11].id}</h1>
                   </div>
@@ -184,37 +151,25 @@ function Réservation() {
                 </div>
               </div>
               <div className="rightrange">
-                <div
-                  className="table14"
-                  onClick={toggleReservationMode}
-                >
+                <div className="table14" onClick={toggleReservationMode}>
                   <div className="table14-15-16-17Chaises">
                     <h1 className="tableNumber">{tables[12].id}</h1>
                   </div>
                   <div className="table14-15-16-17chaise1"></div>
                 </div>
-                <div
-                  className="table15"
-                  onClick={toggleReservationMode}
-                >
+                <div className="table15" onClick={toggleReservationMode}>
                   <div className="table14-15-16-17Chaises">
                     <h1 className="tableNumber">{tables[13].id}</h1>
                   </div>
                   <div className="table14-15-16-17chaise1"></div>
                 </div>
-                <div
-                  className="table16"
-                  onClick={toggleReservationMode}
-                >
+                <div className="table16" onClick={toggleReservationMode}>
                   <div className="table14-15-16-17Chaises">
                     <h1 className="tableNumber">{tables[14].id}</h1>
                   </div>
                   <div className="table14-15-16-17chaise1"></div>
                 </div>
-                <div
-                  className="table17"
-                  onClick={toggleReservationMode}
-                >
+                <div className="table17" onClick={toggleReservationMode}>
                   <div className="table14-15-16-17Chaises">
                     <h1 className="tableNumber">{tables[15].id}</h1>
                   </div>
