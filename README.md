@@ -28,4 +28,5 @@ Il est encore accessible en ligne pour illustrer ma motivation à apprendre par 
 
 - 🎨 Front stylisé avec Styled Components
 - 📦 Utilisation d’icônes grâce à React Icons
+
   
